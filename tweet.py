@@ -34,7 +34,7 @@ def run(hash_tag):
 
             if not tweet.user.following:
                 tweet.user.follow()  # turn off to not follow
-                logging.info(f'Followed the user {tweet.user}')
+                logging.info(f"Followed the user {tweet.user}")
 
         except tw.TweepError as e:
             print(e.reason)
