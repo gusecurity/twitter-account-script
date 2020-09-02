@@ -24,7 +24,6 @@ jobs:
           DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
         run: |
           echo "$DOCKER_PASS" | docker login --username "$DOCKER_USER" --password-stdin
-          ./gradlew build
           docker build -t gusec_twitter .
           docker tag gusec_twitter apol12/gusec_twitter:latest
           docker push apol12/gusec_twitter:latest
