@@ -2,6 +2,8 @@
 
 Needs [twitter dev account](https://developer.twitter.com/en/apply-for-access) keys to function. Place in json file called `creds.json`. Takes random choice of hashtags then performs the choice of actions and times out for some time.
 
+Currently auto-pushes to my dockerhub for image deployment on heroku. If you need to change what account is pushed to then change the secrets in repo.
+
 ## Cloning the repo
 
 ```bash

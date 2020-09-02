@@ -46,7 +46,9 @@ def run(hash_tag):
 
 if __name__ == '__main__':
     api = auth()
+    hash_tags = ["#cybersecurity", "#hacking", "#security", "#hacker", "#technology", "#infosec",
+                 "#ethicalhacking", "#tech", "#linux", "#cybercrime", "#malware", "#kalilinux", "#informationsecurity"]
     while True:
         logging.warning("Going into run")
-        run(random.choice(["#cybersecurity"]))  # put hashtags to scan here
+        run(random.choice(hash_tags))  # put hashtags to scan here
         sleep(random.randint(500, 1100))  # how much to wait in ms after run
